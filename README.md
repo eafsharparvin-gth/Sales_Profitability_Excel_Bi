@@ -1,44 +1,25 @@
-Sales & Profitability Analysis | Excel BI Dashboard
-Project Overview
+# Sales & Profitability Analysis | Excel BI Dashboard
+## Project Overview
+
 This project is an interactive Sales & Profitability Analysis Dashboard built using Microsoft Excel, Power Query, Power Pivot, and DAX.
 
 The goal is to analyze sales performance, profitability, product categories, customer locations, and monthly trends through a dynamic business intelligence reporting solution.
 
 The dashboard allows users to explore business performance using interactive filters and key performance indicators (KPIs).
 
-Dashboard Preview
-Dataset
+## Dashboard Preview
+
+![Sales & Profitability Dashboard](images/sales_dashboard.png)
+## Dataset
+
 The project uses a sample sales dataset covering January–December 2026.
 
-Dataset
-
-Records
-
-Description
-
-Sales
-
-400
-
-Sales transactions, quantities, prices, and related IDs
-
-Products
-
-15
-
-Product information, categories, and costs
-
-Customers
-
-20
-
-Customer information and locations
-
-Date Table
-
-365
-
-Calendar data for time-based analysis
+| Dataset | Records | Description |
+|---|---:|---|
+| Sales | 400 | Sales transactions, quantities, prices, and related IDs |
+| Products | 15 | Product information, categories, and costs |
+| Customers | 20 | Customer information and locations |
+| Date Table | 365 | Calendar data for time-based analysis |
 
 The dataset includes three product categories: Beverage, Dry Fruit, and Food.
 
