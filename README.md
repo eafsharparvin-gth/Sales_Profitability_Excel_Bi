@@ -77,6 +77,7 @@ The reporting workflow follows these stages:
 
 ## Project Structure
 
+```text
 Sales_Profitability_Excel_BI/
 ├── data/
 │ ├── Sales1.xlsx
@@ -88,6 +89,7 @@ Sales_Profitability_Excel_BI/
 ├── images/
 │ └── sales_dashboard.png
 └── README.md
+```
 
 ## How to Use
 1. Download or clone the repository.
@@ -110,12 +112,10 @@ To refresh the project on another computer:
 5. Update its Power Pivot source connections to the local paths of report/query1.xlsx and data/Sales1.xlsx.
 6. Refresh the Data Model and verify the dashboard results.
 
-**Importatnt:** Source connections currently require local path configuration when the project is moved to another computer.
+**Important:** Source connections currently require local path configuration when the project is moved to another computer.
 
 ## Business Value
-This project demonstrates how Excel-based business intelligence can support:
 
-- **Sales and profitability monitoring
 This project demonstrates how Excel-based business intelligence can support:
 
 - **Sales and Profitability Monitoring:** Track revenue, profit, and profit margins.
