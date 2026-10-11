@@ -23,99 +23,115 @@ The project uses a sample sales dataset covering January–December 2026.
 
 The dataset includes three product categories: Beverage, Dry Fruit, and Food.
 
-Tools & Technologies
-Microsoft Excel — Dashboard development and reporting
-Power Query — Data import, transformation, and preparation
-Power Pivot — Data modeling and table relationships
-DAX — Business KPI calculations
-PivotTables & PivotCharts — Interactive analysis and visualization
-Slicers & Timeline — Dynamic filtering by product category and date
-Key Performance Indicators
+## Tools & Technologies
+
+- **Microsoft Excel :** Dashboard development and reporting
+- **Power Query :** Data import, transformation, and preparation
+- **Power Pivot :** Data modeling and table relationships
+- **DAX :** Business KPI calculations
+- **PivotTables & PivotCharts :** Interactive analysis and visualization
+- **Slicers & Timeline :** Dynamic filtering by product category and date
+
+## Key Performance Indicators
 The dashboard provides four main KPIs:
 
-KPI
-
-Value
-
-Total Revenue
-
-52,082
-
-Total Profit
-
-22,849
-
-Profit Margin
-
-43.87%
-
-Total Sales Transactions
-
-400
+| KPI | Value |
+|---|---:|
+| Total Revenue | 52,082 |
+| Total Profit | 22,849 |
+| Profit Margin | 43.87% |
+| Total Sales Transactions | 400 |
 
 These values represent the full dataset with all filters cleared. Monetary units follow the sample dataset.
 
-Dashboard Features
-The dashboard contains four interactive visualizations:
+## Dashboard Features
+The interactive dashboard includes:
 
-Monthly Revenue & Profit Trend — Compares revenue and profit throughout the year.
-Revenue & Profit by Category — Evaluates the financial performance of product categories.
-Top 5 Products by Revenue — Identifies the highest-revenue products.
-Top 5 Cities by Revenue — Highlights the leading customer locations.
-A Category Slicer and a Date Timeline allow users to filter the dashboard dynamically.
+### KPI Cards
+- Total Revenue
+- Total Profit
+- Profit Margin
+- Total Sales Transactions
 
-The KPI cards and charts respond to the selected filters.
+### Interactive Charts
+1. Monthly Revenue & Profit Trend
+2. Revenue & Profit by Category
+3. Top 5 Products by Revenue
+4. Top 5 Cities by Revenue
 
-Data Preparation & Modeling
+### Interactive Filters
+- **Category Slicer:** Filter results by product category.
+- **Date Timeline:** Analyze performance across different time periods.
+
+All KPI cards and charts respond dynamically to the selected filters.
+
+## Data Preparation & Modeling
 The reporting workflow follows these stages:
 
-Import source Excel files using Power Query.
-Prepare and transform the sales, product, and customer data.
-Load the prepared data into the Excel Data Model.
-Create relationships between the sales, product, customer, and date tables.
-Define DAX measures for revenue, profit, profit margin, and transaction count.
-Build PivotTables, PivotCharts, and interactive dashboard controls.
-Project Structure
+1. Import source Excel files using Power Query.
+2. Prepare and transform the sales, product, and customer data.
+3. Load the prepared data into the Excel Data Model.
+4. Create relationships between the sales, product, customer, and date tables.
+5. Define DAX measures for revenue, profit, profit margin, and transaction count.
+6. Build PivotTables, PivotCharts, and interactive dashboard controls.
+
+## Project Structure
+
 Sales_Profitability_Excel_BI/
-│
 ├── data/
-│   ├── Sales1.xlsx
-│   ├── Products1.xlsx
-│   └── Customers1.xlsx
-│
+│ ├── Sales1.xlsx
+│ ├── Products1.xlsx
+│ └── Customers1.xlsx
 ├── report/
-│   ├── query1.xlsx
-│   └── Sales_Profitability_Dashboard.xlsx
-│
+│ ├── query1.xlsx
+│ └── Sales_Profitability_Dashboard.xlsx
 ├── images/
-│   └── sales_dashboard.png
-│
+│ └── sales_dashboard.png
 └── README.md
-How to Use
-Download or clone the repository.
-Open report/Sales_Profitability_Dashboard.xlsx in Microsoft Excel for Windows with Power Pivot support.
-Navigate to the Dashboard worksheet to explore the saved report.
-Use the Category Slicer and Date Timeline to filter the results.
-Refreshing the Data
+
+## How to Use
+1. Download or clone the repository.
+2. Open report/Sales_Profitability_Dashboard.xlsx in Microsoft Excel for Windows with Power Pivot support.
+3. Navigate to the Dashboard worksheet to explore the saved report.
+4. Use the Category Slicer and Date Timeline to filter the results.
+
+**Note:** The dashboard contains saved results. Refreshing the underlying data on another computer requires updating the local source connections as explained below.
+
+## Refreshing the Data
+
 The project includes external Excel data connections.
 
 To refresh the project on another computer:
 
-Open report/query1.xlsx.
-Update the Power Query parameter DataFolder to the local path of the downloaded data folder, including the trailing backslash.
-Refresh the queries and save the workbook.
-Open report/Sales_Profitability_Dashboard.xlsx.
-Update its Power Pivot source connections to the local paths of report/query1.xlsx and data/Sales1.xlsx.
-Refresh the Data Model and verify the dashboard results.
-Note: Source connections currently require local path configuration when the project is moved to another computer.
+1. Open report/query1.xlsx.
+2. Update the Power Query parameter DataFolder to the local path of the downloaded data folder, including the trailing backslash.
+3. Refresh the queries and save the workbook.
+4. Open report/Sales_Profitability_Dashboard.xlsx.
+5. Update its Power Pivot source connections to the local paths of report/query1.xlsx and data/Sales1.xlsx.
+6. Refresh the Data Model and verify the dashboard results.
 
-Business Value
+**Importatnt:** Source connections currently require local path configuration when the project is moved to another computer.
+
+## Business Value
 This project demonstrates how Excel-based business intelligence can support:
 
-Sales and profitability monitoring
-Product and category performance evaluation
-Geographic sales analysis
-Monthly performance tracking
-Interactive management reporting
-Project Scope
-This is a portfolio project using sample data to demonstrate practical Excel BI, data modeling, and business reporting skills.
+- **Sales and profitability monitoring
+This project demonstrates how Excel-based business intelligence can support:
+
+- **Sales and Profitability Monitoring:** Track revenue, profit, and profit margins.
+- **Product Performance Analysis:** Evaluate product and category performance.
+- **Geographic Sales Analysis:** Compare sales performance across customer locations.
+- **Monthly Trend Analysis:** Identify changes in sales and profitability over time.
+- **Interactive Management Reporting:** Support business decisions through dynamic dashboards.
+
+## Project Scope
+
+This portfolio project uses sample data to demonstrate practical skills in Excel Business Intelligence, data modeling, DAX calculations, interactive dashboard development, and business performance reporting.
+
+## Data Disclaimer
+
+This project uses synthetic data created for educational and portfolio demonstration purposes.
+
+All sales figures, financial metrics, customer information, and city-level performance results are fictional and do not represent actual business operations.
+
+Real city names may be used for geographical analysis, but all associated numerical values are simulated.
